@@ -4,16 +4,18 @@ export type IMovie = {
   title: string;
   rating: number;
   medium_cover_image: string;
+  description_intro: string;
 };
 
 export type IMovieData = {
   movie: IMovie;
-};
-
-export type IMovieVars = {
-  id: number;
+  suggestions: IMovie[];
 };
 
 export type IMoviesData = {
   movies: IMovie[];
+};
+
+export type IMovieVars = {
+  id: number;
 };

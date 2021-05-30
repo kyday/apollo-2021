@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { gql } from "@apollo/client";
 
-function Movie({ id, bg }: any) {
-  console.log(id, bg);
+type Props = {
+  id: number;
+  bg: string;
+};
+
+function Movie({ id, bg }: Props) {
   return (
     <Container>
       <Link to={`/${id}`}>

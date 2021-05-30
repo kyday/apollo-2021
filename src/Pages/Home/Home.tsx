@@ -5,8 +5,8 @@ import { useQuery, gql } from "@apollo/client";
 
 import { IMovie, IMoviesData } from "../../type/type";
 
-const getMovies = gql`
-  query Movie {
+const GET_MOVIES = gql`
+  query getMovies {
     movies {
       id
       title
@@ -16,7 +16,7 @@ const getMovies = gql`
 `;
 
 function Home() {
-  const { loading, error, data } = useQuery<IMoviesData>(getMovies);
+  const { loading, error, data } = useQuery<IMoviesData>(GET_MOVIES);
 
   if (error) return <p>Error :(</p>;
 
@@ -24,7 +24,7 @@ function Home() {
     <Container>
       <Header>
         <Title>Apollo Movie App 2021</Title>
-        <Subtitle>Good GQL</Subtitle>
+        <Subtitle>GQL</Subtitle>
       </Header>
       {loading && <Loading>Loading...</Loading>}
       <Movies>
