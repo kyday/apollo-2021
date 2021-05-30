@@ -4,5 +4,5 @@ Movie app
 
 - React
 - React Hook
-- Typesript
+- Typescript
 - Apollo and GraphQL
