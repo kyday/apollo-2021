@@ -29,7 +29,7 @@ function Detail() {
   const { loading, error, data } = useQuery<IMovieData>(GET_MOVIE, {
     variables: { id: Number(id) },
   });
-  if (error) return <p>Error :(</p>;
+  if (error) return <p>Error</p>;
 
   return (
     <Container>
