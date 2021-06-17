@@ -24,7 +24,7 @@ function Home() {
     <Container>
       <Header>
         <Title>Apollo Movie App 2021</Title>
-        <Subtitle>GQL</Subtitle>
+        <Subtitle>GraphQL</Subtitle>
       </Header>
       {loading && <Loading>Loading...</Loading>}
       <Movies>
